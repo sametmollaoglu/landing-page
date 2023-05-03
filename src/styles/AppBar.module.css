@@ -1,0 +1,17 @@
+.toolbar {
+  background-color: #fff;
+}
+
+.button {
+  color: #212b36;
+  text-transform: none;
+}
+
+.popoverTitle {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 19px;
+
+  color: rgba(30, 50, 92, 0.6);
+}

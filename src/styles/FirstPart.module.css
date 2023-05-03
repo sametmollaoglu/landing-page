@@ -1,0 +1,22 @@
+.wrapper {
+  background-color: #1e325c;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.joinButton {
+  background: #27aa67;
+  box-shadow: 0px 8px 16px rgba(0, 171, 85, 0.24);
+  border-radius: 8px;
+  font-weight: 600;
+  text-transform: none;
+}
+
+.paymentButton {
+  background: #ffffff;
+  box-shadow: 0px 8px 16px rgba(0, 171, 85, 0.24);
+  border-radius: 8px;
+  color: #27aa67;
+  font-weight: 600;
+  text-transform: none;
+}

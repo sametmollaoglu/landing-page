@@ -1,0 +1,31 @@
+.wrapper {
+    margin-top: 3rem;
+}
+
+.title {
+    font-family: 'Public Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 30px;
+    text-align: start;
+    color: #1E325C;
+}
+
+.text {
+    font-family: 'Public Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+
+    color: #2F2E41;
+}
+
+.button {
+    background: #27AA67;
+    box-shadow: 0px 8px 16px rgba(0, 171, 85, 0.24);
+    border-radius: 8px;
+    font-weight: 600;
+    text-transform: none;
+}

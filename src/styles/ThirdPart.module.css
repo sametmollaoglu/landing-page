@@ -1,0 +1,65 @@
+.wrapper {
+  background-color: #1e325c;
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  color: #ffffff;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.text {
+  font-family: 'Public Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+
+  color: #637381;
+}
+
+.bottomCardTitle {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  color: #252b42;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.isOrtagim {
+  background: linear-gradient(180deg, #0451e7 0%, rgba(0, 167, 238, 0.55) 100%);
+}
+
+.isOrtagimTitle {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.isOrtagimText {
+  font-family: 'Public Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+
+  color: white;
+}

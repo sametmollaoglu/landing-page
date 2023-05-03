@@ -1,0 +1,77 @@
+.wrapper {
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  color: #1e325c;
+  margin-top: 2rem;
+
+  text-align: center;
+}
+
+.tabList {
+  display: flex;
+  width: 60vw;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.customTabs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.indicator {
+  background-color: purple;
+  border: 0.3rem solid #27aa67;
+  border-radius: 20px;
+}
+
+.selectedTab {
+  color: #1e325c !important;
+}
+
+.tabTitle {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: gray;
+
+  text-transform: none;
+}
+
+.itemOneTitle {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.2rem;
+  letter-spacing: 0.1px;
+  color: #252b42;
+}
+
+.itemOneText {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.1px;
+  color: #252b42;
+}
+
+.itemTwoItem {
+  font-family: 'Public Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+
+  color: #1e325c;
+}
