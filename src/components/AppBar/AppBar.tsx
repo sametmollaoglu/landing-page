@@ -9,6 +9,7 @@ import styles from '@component/styles/AppBar.module.css';
 import Popover from '@mui/material/Popover';
 import Typography from '@mui/material/Typography';
 import { Card, CardContent, CardMedia, Grid, Paper } from '@mui/material';
+import Link from 'next/link';
 
 export default function DrawerAppBar() {
   const [anchorEl, setAnchorEl] = React.useState<HTMLElement | null>(null);
@@ -44,16 +45,19 @@ export default function DrawerAppBar() {
       image: 'popover-kirapratik.svg',
       title: 'KiraPratik',
       text: 'Türkiye’nin ilk kira takip platformu.',
+      url: 'https://www.kirapratik.com.tr/',
     },
     {
       image: 'popover-aidatpratik.svg',
       title: 'AidatPratik',
       text: 'Site ve bina yöneticileri için yönetim platformu.',
+      url: '',
     },
     {
       image: 'popover-cetele.svg',
       title: 'Çetele',
       text: 'Çok sayıda mülkü tek ekranda görüntüleyin ve yönetin.',
+      url: '',
     },
   ];
   const secondCard = [
@@ -61,21 +65,25 @@ export default function DrawerAppBar() {
       image: 'popover-kira-sozlesmesi-olustur.svg',
       title: 'Kira Sözleşmesi Oluştur',
       text: 'Elektronik kira sözleşmesi robotu şimdi yayında.',
+      url: 'https://www.kirapratik.com.tr/kp-panel/kira-sozlesmesi',
     },
     {
       image: 'popover-kira-artis.svg',
       title: 'Kira Artış Oranı Hesapla',
       text: 'Seçtiğiniz ay için güncel kira tutarını görüntüleyin.',
+      url: 'https://www.kirapratik.com.tr/kira-artis',
     },
     {
       image: 'popover-kredi-karti.svg',
       title: 'Kredi Kartı ile Kira Öde',
       text: 'kirapratik.com’da kredi kartı ile kira ödeyin!',
+      url: 'https://www.kirapratik.com.tr/kp-panel/kira-ode',
     },
     {
       image: 'popover-banka-entegrasyonu.svg',
       title: 'Banka Entegrasyonu',
       text: 'Sekiz büyük bankanın mobil uygulamasından fatura öder gibi kira ödemenizi gerçekleştirebilirsiniz.',
+      url: 'https://www.kirapratik.com.tr/nasil',
     },
   ];
   const thirdCard = [
@@ -83,6 +91,7 @@ export default function DrawerAppBar() {
       image: 'popover-is-ortagim.svg',
       title: 'İş Ortağım',
       text: 'KiraPratik ekosistemine dahil edilen her kontrat için kazanç sağlama imkanı. Gayrimenkul uzmanlarının favorisi.',
+      url: 'https://www.kirapratik.com.tr/is-ortagim/',
     },
   ];
 
@@ -142,103 +151,109 @@ export default function DrawerAppBar() {
                 </Grid>
                 <Grid style={{ marginTop: '1rem' }} md={4}>
                   {firstCard.map((item, index) => (
-                    <Card
-                      elevation={0}
-                      style={{
-                        display: 'flex',
-                        alignItems: 'center',
-                        cursor: 'pointer',
-                      }}
-                      onClick={sefa}
-                    >
-                      <CardMedia
-                        component="img"
-                        alt="green iguana"
-                        sx={{
-                          height: '2rem',
-                          minWidth: '10%',
-                          maxWidth: '10%',
-                          objectFit: 'fill',
+                    <Link href={item.url}>
+                      <Card
+                        elevation={0}
+                        style={{
+                          display: 'flex',
+                          alignItems: 'center',
+                          cursor: 'pointer',
                         }}
-                        image={item.image}
-                      />
-                      <CardContent>
-                        <div>
-                          <Typography style={{ fontWeight: '700' }}>
-                            {item.title}
-                          </Typography>
-                          <Typography>{item.text}</Typography>
-                        </div>
-                      </CardContent>
-                    </Card>
+                        onClick={sefa}
+                      >
+                        <CardMedia
+                          component="img"
+                          alt="green iguana"
+                          sx={{
+                            height: '2rem',
+                            minWidth: '10%',
+                            maxWidth: '10%',
+                            objectFit: 'fill',
+                          }}
+                          image={item.image}
+                        />
+                        <CardContent>
+                          <div>
+                            <Typography style={{ fontWeight: '700' }}>
+                              {item.title}
+                            </Typography>
+                            <Typography>{item.text}</Typography>
+                          </div>
+                        </CardContent>
+                      </Card>
+                    </Link>
                   ))}
                 </Grid>
                 <Grid md={4}>
                   {secondCard.map((item, index) => (
-                    <Card
-                      elevation={0}
-                      style={{
-                        display: 'flex',
-                        alignItems: 'center',
-                        cursor: 'pointer',
-                      }}
-                      onClick={sefa}
-                    >
-                      <CardMedia
-                        component="img"
-                        alt="green iguana"
-                        sx={{
-                          height: '2rem',
-                          minWidth: '10%',
-                          maxWidth: '10%',
-                          objectFit: 'fill',
+                    <Link href={item.url}>
+                      <Card
+                        elevation={0}
+                        style={{
+                          display: 'flex',
+                          alignItems: 'center',
+                          cursor: 'pointer',
                         }}
-                        image={item.image}
-                      />
-                      <CardContent>
-                        <div>
-                          <Typography style={{ fontWeight: '700' }}>
-                            {item.title}
-                          </Typography>
-                          <Typography>{item.text}</Typography>
-                        </div>
-                      </CardContent>
-                    </Card>
+                        onClick={sefa}
+                      >
+                        <CardMedia
+                          component="img"
+                          alt="green iguana"
+                          sx={{
+                            height: '2rem',
+                            minWidth: '10%',
+                            maxWidth: '10%',
+                            objectFit: 'fill',
+                          }}
+                          image={item.image}
+                        />
+                        <CardContent>
+                          <div>
+                            <Typography style={{ fontWeight: '700' }}>
+                              {item.title}
+                            </Typography>
+                            <Typography>{item.text}</Typography>
+                          </div>
+                        </CardContent>
+                      </Card>
+                    </Link>
                   ))}
                 </Grid>
                 <Grid md={4}>
                   {thirdCard.map((item, index) => (
-                    <Card
-                      elevation={0}
-                      style={{
-                        display: 'flex',
-                        alignItems: 'center',
-                        cursor: 'pointer',
-                      }}
-                      onClick={sefa}
-                    >
-                      <CardMedia
-                        component="img"
-                        alt="green iguana"
-                        sx={{
-                          height: '2rem',
-                          minWidth: '10%',
-                          maxWidth: '10%',
-                          objectFit: 'fill',
+                    <Link href={item.url}>
+                      <Card
+                        elevation={0}
+                        style={{
+                          display: 'flex',
+                          alignItems: 'center',
+                          cursor: 'pointer',
                         }}
-                        image={item.image}
-                      />
-                      <CardContent>
-                        <div>
-                          <Typography
-                            style={{ fontWeight: '700', color: '#1B8AF0' }}
-                          >
-                            {item.title}
-                          </Typography>
-                          <Typography>{item.text}</Typography>
-                        </div>
-                      </CardContent>
-                    </Card>
+                        onClick={sefa}
+                      >
+                        <CardMedia
+                          component="img"
+                          alt="green iguana"
+                          sx={{
+                            height: '2rem',
+                            minWidth: '10%',
+                            maxWidth: '10%',
+                            objectFit: 'fill',
+                          }}
+                          image={item.image}
+                        />
+                        <CardContent>
+                          <div>
+                            <Typography
+                              style={{ fontWeight: '700', color: '#1B8AF0' }}
+                            >
+                              {item.title}
+                            </Typography>
+                            <Typography>{item.text}</Typography>
+                          </div>
+                        </CardContent>
+                      </Card>
+                    </Link>
                   ))}{' '}
                 </Grid>
               </Grid>

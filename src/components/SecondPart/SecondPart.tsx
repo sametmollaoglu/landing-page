@@ -5,6 +5,7 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import Icon from '@mui/material/Icon';
 import { useMediaQuery } from '@mui/material';
+import Link from 'next/link';
 
 const svgIcon = (
   <Icon
@@ -106,14 +107,16 @@ export default function SecondPart() {
             justifyContent: 'center',
           }}
         >
-          <Button
-            className={styles.button}
-            variant="contained"
-            startIcon={svgIcon}
-            size="large"
-          >
-            KiraPratik Hakkında Daha Fazla Bilgi
-          </Button>
+          <Link href={'https://www.kirapratik.com.tr/hizmetlerimiz'}>
+            <Button
+              className={styles.button}
+              variant="contained"
+              startIcon={svgIcon}
+              size="large"
+            >
+              KiraPratik Hakkında Daha Fazla Bilgi
+            </Button>
+          </Link>
         </div>
       </Grid>
     </Grid>

@@ -5,6 +5,7 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import Icon from '@mui/material/Icon';
 import { CardMedia, useMediaQuery } from '@mui/material';
+import Link from 'next/link';
 
 const joinIcon = (
   <Icon
@@ -89,25 +90,31 @@ export default function FirstPart() {
             marginTop: '3rem',
           }}
         >
-          <Button
-            className={styles.joinButton}
-            variant="contained"
-            style={{ marginRight: '2rem' }}
-            startIcon={joinIcon}
-            size={
-              isClient && useMediaQuery('(max-width:600px)') ? 'small' : 'large'
-            }
-          >
-            Hemen Katıl
-          </Button>
-          <Button
-            className={styles.paymentButton}
-            variant="contained"
-            startIcon={paymentIcon}
-            size="large"
-          >
-            Kira Öde
-          </Button>
+          <Link href={'https://www.kirapratik.com.tr/kp-panel/uye-ol'}>
+            <Button
+              className={styles.joinButton}
+              variant="contained"
+              style={{ marginRight: '2rem' }}
+              startIcon={joinIcon}
+              size={
+                isClient && useMediaQuery('(max-width:600px)')
+                  ? 'small'
+                  : 'large'
+              }
+            >
+              Hemen Katıl
+            </Button>
+          </Link>
+          <Link href={'https://www.kirapratik.com.tr/kp-panel/kira-ode'}>
+            <Button
+              className={styles.paymentButton}
+              variant="contained"
+              startIcon={paymentIcon}
+              size="large"
+            >
+              Kira Öde
+            </Button>
+          </Link>
         </div>
       </Grid>
 

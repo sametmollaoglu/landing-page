@@ -13,6 +13,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import { List, ListItem, ListItemIcon, ListItemText } from '@mui/material';
 import CheckIcon from '@mui/icons-material/Check';
+import Link from 'next/link';
 
 export default function FifthPart() {
   const [value, setValue] = React.useState('1');
@@ -70,6 +71,7 @@ export default function FifthPart() {
         false,
       ],
       button: 'Üye Ol ve Satın Al',
+      url: 'https://www.kirapratik.com.tr/kp-panel/uye-ol',
     },
     {
       title: 'YASAL',
@@ -80,6 +82,7 @@ export default function FifthPart() {
       annualySaving: 'Yıllık Plan ile 600TL Tasarruf Edin',
       content: [true, true, true, true, true, true, true, true, false, false],
       button: 'Üye Ol ve Satın Al',
+      url: 'https://www.kirapratik.com.tr/kp-panel/uye-ol',
     },
     {
       title: 'KİRA GARANTİSİ',
@@ -89,6 +92,7 @@ export default function FifthPart() {
       annualySaving: 'Yıllık Kira Gelirinizi Garanti Altına Alın',
       content: [true, true, true, true, true, true, true, true, true, true],
       button: 'Teklif Al',
+      url: 'https://demo.kirapratik.com.tr/iletisim',
     },
   ];
 
@@ -336,17 +340,19 @@ export default function FifthPart() {
                           justifyContent: 'center',
                         }}
                       >
-                        <Button
-                          className={
-                            item.percentage
-                              ? styles.lastCardButton
-                              : styles.cardButton
-                          }
-                          variant="contained"
-                          size="small"
-                        >
-                          {item.button}
-                        </Button>
+                        <Link href={item.url}>
+                          <Button
+                            className={
+                              item.percentage
+                                ? styles.lastCardButton
+                                : styles.cardButton
+                            }
+                            variant="contained"
+                            size="small"
+                          >
+                            {item.button}
+                          </Button>
+                        </Link>
                       </CardActions>
                     </Card>
                   </Grid>
@@ -500,17 +506,19 @@ export default function FifthPart() {
                           justifyContent: 'center',
                         }}
                       >
-                        <Button
-                          className={
-                            item.percentage
-                              ? styles.lastCardButton
-                              : styles.cardButton
-                          }
-                          variant="contained"
-                          size="small"
-                        >
-                          {item.button}
-                        </Button>
+                        <Link href={item.url}>
+                          <Button
+                            className={
+                              item.percentage
+                                ? styles.lastCardButton
+                                : styles.cardButton
+                            }
+                            variant="contained"
+                            size="small"
+                          >
+                            {item.button}
+                          </Button>
+                        </Link>
                       </CardActions>
                     </Card>
                   </Grid>
